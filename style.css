@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,6 +133,83 @@ table {
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #f2eae2;
+  font-size: 0.875rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* TYPOGRAPHY */
+.perfume-decorator {
+  font-size: 0.75rem;
+  letter-spacing: 0.5rem;
+  color: hsl(228, 12%, 48%);
+}
+
+h1 {
+  margin-top: 1.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Fraunces', serif;
+}
+
+/* UTILITY CLASSES */
+.even-columns {
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 37.5rem;
+  overflow: hidden;
+}
+
+/*Components */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.image-container {
+  overflow: hidden;
+}
+.description-container {
+  padding: 2rem;
+}
+.description-paragraph {
+  margin-top: 1.5rem;
+  color: #6c7289;
+}
+.price-container * {
+  display: inline-block;
+  margin-top: 1.8125rem;
+  font-family: 'Fraunces', serif;
+}
+.current-price {
+  color: #3d8168;
+  font-size: 2rem;
+}
+.msrp {
+  margin-left: 1.1875rem;
+  font-size: 0.8125rem;
+  color: #6c7289;
+  text-decoration: line-through;
+  height: 100%;
+  text-align: center;
+  /* DOES THIS WORK TO CENTER TEXT VERTICALLY WITHIN DIV? */
+}
+.add-to-cart {
+  margin-top: 1.875rem;
+  background-color: #3d8168;
+  color: white;
+  font-weight: bold;
+  padding: 15px 62px;
+  border: none;
+  border-radius: 8px;
 }
